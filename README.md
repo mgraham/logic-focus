@@ -1,17 +1,23 @@
-# Logic Pro: Zoom to Marker
+# Logic Pro Scripts: Focus on Marker, Focus on Locators
 
-An AppleScript for Logic Pro that zooms the Tracks area to the time range of the nearest marker, hiding any tracks that have no content within that range. Useful for quickly focusing on a specific section of a project.
+There are two AppleScripts here to help you focus on a small part of a large project.
+
+1. Focus on Marker
+Hides all tracks that do not have content within the bounds of the current marker, then zooms the display to the time range of the current marker.
+
+2. Focus on Locator
+Hides all tracks that do not have content within the bounds of the locators, then zooms the display to the time range of the locators.
 
 ## Demo
 
-![Screencast of Logic zoom-to-marker in action](zoom-to-marker-screencast1.gif)
+![Screencast of Logic zoom-to-marker in action](zoom-to-marker-screencast2.gif)
 
-Pressing a key in Keyboard Maestro runs the script which takes a large project with lots of empty space and makes content within the current marker visible.
+Pressing a key in Keyboard Maestro runs the script which takes a large project with lots of empty space and makes content within the current marker visible and hides tracks that do not have content within the current marker.
 
-## What It Does
+## What the scripts do
 
 1. Shows any currently hidden tracks
-2. Sets the locators to the nearest marker and enables Cycle mode
+2. Focus Marker only: Sets the locators to the nearest marker and enables Cycle mode
 3. Unhides all tracks
 4. Marks all tracks as hidden
 5. Selects all regions within the locator range
@@ -23,15 +29,15 @@ The result is a focused view of just the tracks that are active in the selected 
 
 ## Limitations and known issues
 
-This script was tested with Logic version 11.1.1.  Because the UI layout of Logic may change between versions, the method used to read the state of the **Hide** button may break in other versions.
+The scripts were tested with Logic version 11.1.1.  Because the UI layout of Logic may change between versions, the method used to read the state of the **Hide** button may break in other versions.
 
-Your Logic project window needs to have the Toggle Hide button visible and the Cycle button visible.  If your Logic window is so small that these controls are not shown, then the script will fail.
+Your Logic project window needs to have the Toggle Hide button visible and the Cycle button visible.  If your Logic window is so small that these controls are not shown, then the scripts will fail.
 
 This approach doesn't always work as expected with track stacks.
 
-The Cycle button and the Toggle Hide button must both be visible within the Logic window before running the script.
+The Cycle button and the Toggle Hide button must both be visible within the Logic window before running the scripts.
 
-Very large projects can cause this script to take a long time to run.  I have a project that takes 20 seconds to run.
+Very large projects can cause the scripts to take a long time to run.  I have a project that takes 20 seconds to run.
 
 ## Requirements
 
