@@ -4,7 +4,9 @@ An AppleScript for Logic Pro that zooms the Tracks area to the time range of the
 
 ## Demo
 
-<!-- TODO: Add screencast here -->
+![Screencast of Logic zoom-to-marker in action](zoom-to-marker-screencast1.mov)
+
+Pressing a key in Keyboard Maestro runs the script which takes a large project with lots of empty space and makes content within the current marker visible.
 
 ## What It Does
 
@@ -52,6 +54,7 @@ Very large projects can cause this script to take a long time to run.  I have a 
 2. Create a new action for the macro.  Search for "applescript".  Double click "Execute an AppleScript".
 3. Paste the script contents into the script text box
 
+![Screenshot of setting up Keyboard Maestro to run an AppleScript from a macro](keyboard-maestro-config.png)
 
 ## Configuration
 
