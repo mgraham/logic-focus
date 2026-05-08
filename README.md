@@ -10,7 +10,7 @@ Hides all tracks that do not have content within the bounds of the locators, the
 
 ## Demo
 
-![Screencast of Logic zoom-to-marker in action](zoom-to-marker-screencast2.gif)
+![Screencast of Logic zoom-to-marker in action](focus-marker-screencast2.gif)
 
 Pressing a key in Keyboard Maestro runs the script which takes a large project with lots of empty space and makes content within the current marker visible and hides tracks that do not have content within the current marker.
 
