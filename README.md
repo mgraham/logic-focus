@@ -4,7 +4,7 @@ An AppleScript for Logic Pro that zooms the Tracks area to the time range of the
 
 ## Demo
 
-![Screencast of Logic zoom-to-marker in action](zoom-to-marker-screencast1.mov)
+![Screencast of Logic zoom-to-marker in action](zoom-to-marker-screencast1.gif)
 
 Pressing a key in Keyboard Maestro runs the script which takes a large project with lots of empty space and makes content within the current marker visible.
 
