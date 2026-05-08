@@ -93,6 +93,9 @@ A second problem is that the macro required a Logic project to be in a known sta
 
 So I spent some time with Claude code converting this into an AppleScript program and worked out ways to overcome these problems.  We experimented until we figured out how to read the state of UI elemnts within Logic, and also found a way to determine whether Logic is "busy".
 
+You can read the transcript of the development process here: 
+![Transcript of Claude development session](claude-transcript.md)
+
 ## How It Works
 
 The script uses macOS's [Accessibility API](https://developer.apple.com/documentation/applicationservices/accessibility_api) (via AppleScript System Events) to:
